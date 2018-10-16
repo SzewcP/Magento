@@ -1,0 +1,7 @@
+<?php
+/** @var \Virtua\Technology\Block\View $block */
+$item = $block->getItem();
+?>
+<h1><p><?php echo $item->getName(); ?></p></h1>
+<h3><p><?php echo $item->getDescription(); ?></p></h3>
+<p><img src="<?php echo $block->showImage($item) ?>"></p>

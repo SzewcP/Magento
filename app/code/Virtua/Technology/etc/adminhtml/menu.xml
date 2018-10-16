@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Virtua_Technology::virtua" title="Virtua" translate="title" module="Virtua_Technology" parent="Magento_Catalog::catalog" sortOrder="50" dependsOnModule="Virtua_Technology" resource="Virtua_Technology::virtua"/>
+        <add id="Virtua_Technology::virtua_technologies" title="Technologies" translate="title" module="Virtua_Technology" parent="Virtua_Technology::virtua" sortOrder="10" dependsOnModule="Virtua_Technology" action="technology/technologies" resource="Virtua_Technology::virtua"/>
+    </menu>
+</config>

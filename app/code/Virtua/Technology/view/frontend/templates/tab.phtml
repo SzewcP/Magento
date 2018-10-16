@@ -1,0 +1,10 @@
+<?php
+/** @var \Virtua\Technology\Block\Tab $block */
+?>
+<?php foreach ($block->getItem() as $item): ?>
+    <li><?php echo $item->getName() ?></li>
+    <li><?php echo $item->getDescription() ?></li>
+    <p><img src="<?php echo $block->showImage($item) ?>" height="100" width="100"></p>
+<?php endforeach; ?>
+
+

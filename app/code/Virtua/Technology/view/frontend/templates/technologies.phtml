@@ -1,0 +1,15 @@
+<?php
+/** @var \Virtua\Technology\Block\Technologies $block */
+?>
+<?php foreach ($block->getTechnologies() as $item): ?>
+    <ul style="list-style-type: none">
+        <li><a style="text-decoration: none; color: black"
+               href="/technologies/<?php echo $item->getUrl() ?>"> <?php echo $item->getName(); ?></a></li>
+        <li><img src="<?php echo $block->showLogo($item) ?>" height="150" width="150"></li>
+    </ul>
+<?php endforeach; ?>
+<?php if ($block->getPagerHtml()): ?>
+    <div class="order-products-toolbar toolbar bottom">
+        <?php echo $block->getPagerHtml(); ?>
+    </div>
+<?php endif ?>

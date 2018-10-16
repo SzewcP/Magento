@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="product.info.main">
+            <block class="Virtua\FeaturedProducts\Block\Display" name="featured_products_display" after="product.info" template="display.phtml" />
+        </referenceContainer>
+    </body>
+</page>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="virtua" translate="label" sortOrder="100">
+            <label>Virtua</label>
+        </tab>
+        <section id="delivery" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Plugin</label>
+            <tab>virtua</tab>
+            <resource>Virtua_Plugin::config</resource>
+            <group id="delivery_options" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Estimated Delivery Date</label>
+                <field id="ships_until" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Ships untill</label>
+                </field>
+                <field id="end_date" translate="label comment" sortOrder="4" type="text" showInDefault="1" showInStore="1" >
+                    <label>Holidays end</label>
+                    <frontend_model>Virtua\Delivery\Block\DatePicker</frontend_model>
+                </field>
+                <field id="start_date" translate="label comment" sortOrder="3" type="text" showInDefault="1" showInStore="1" >
+                    <label>Holidays start</label>
+                    <frontend_model>Virtua\Delivery\Block\DatePicker</frontend_model>
+                </field>
+                <field id="days_list" translate="label" type="multiselect" sortOrder="1" showInDefault="1" showInStore="0">
+                    <label>Not Shipping</label>
+                    <source_model>Virtua\Delivery\Model\Config\Source\ConfigOption</source_model>
+                    <can_be_empty>1</can_be_empty>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

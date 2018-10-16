@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <delivery>
+            <delivery_options>
+                <ships_until></ships_until>
+                <days_list></days_list>
+                <end_date></end_date>
+                <start_date></start_date>
+            </delivery_options>
+        </delivery>
+    </default>
+</config>

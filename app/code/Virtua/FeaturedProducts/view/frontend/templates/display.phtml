@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @var Virtua\FeaturedProducts\Block\Display $block
+ */
+
+$products = array();
+$products = $block->getFeaturedCollection();
+?>
+<h1>Featured Products</h1>
+<table class="row">
+    <?php foreach ($products as $product): ?>
+            <h2><?php echo $product->getName(); ?></h2>
+            <img src=" <?php echo $block->getThumbnailUrl($product)?>"> </img>
+        </tr>
+    <?php endforeach; ?>
+</table>
+

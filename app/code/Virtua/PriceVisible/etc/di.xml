@@ -1,0 +1,5 @@
+<config>
+    <type name="Magento\Catalog\Pricing\Render\FinalPriceBox">
+        <plugin name="change_product" type="Virtua\PriceVisible\Plugin\Price" />
+    </type>
+</config>

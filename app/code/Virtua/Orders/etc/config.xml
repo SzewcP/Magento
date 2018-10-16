@@ -1,0 +1,12 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <sales>
+            <sales_email>
+                <invoice>
+                    <virtua_cancel_order_template>sales_email_order_virtua_cancel_order_template</virtua_cancel_order_template>
+                    <virtua_cancel_order_template_guest>sales_email_order_virtua_cancel_order_template_guest</virtua_cancel_order_template_guest>
+                </invoice>
+            </sales_email>
+        </sales>
+    </default>
+</config>
